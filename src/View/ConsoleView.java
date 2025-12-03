@@ -56,6 +56,7 @@ public class ConsoleView {
         System.out.println("  - Destapar:   Filas(abcd...),columnas(123..) A5");     
         System.out.println("  - Guardar:    G");
         System.out.println("  - Cargar:     C");
+        System.out.println("  - Reiniciar:  R");
         System.out.println("  - Salir:      Q");
 
         System.out.print("\n Ingresa un comando: ");
