@@ -1,0 +1,77 @@
+Buscaminas en Java — POO Examen Practico
+
+Proyecto académico desarrollado en Java utilizando el paradigma de **Programación Orientada a Objetos**, siguiendo el patrón MVC (Model - View - Controller).
+
+El juego se ejecuta en consola y permite al usuario interactuar con el tablero utilizando comandos simples. Incluye una lógica completa del clásico Buscaminas, guardado y cargado de partida, banderas, detección de victoria y derrotas.
+
+
+
+ Características del Juego
+
+- Tablero de **10 x 10**
+- **10 minas** colocadas aleatoriamente
+- Descubrimiento automático de casillas vacías (**floodFill**)
+- Marcado y desmarcado de casillas con bandera
+- Opción para **guardar y cargar partida**
+- Control de victoria y derrota
+- Reinicio de juego tras ganar o perder
+- Interfaz de juego por **consola**
+
+
+ Tecnologías utilizadas
+
+- **Java 8+**
+- **POO (Encapsulación, Excepciones, Serialización)**
+- Sistema de archivos para gestión de guardados (`.dat`)
+
+---
+
+ Estructura del Proyecto
+src/
+├─ controller/
+│ └─ GameController.java
+├─ model/
+│ ├─ Casilla.java
+│ ├─ Tablero.java
+│ └─ CasillaYaDescubiertaException.java
+├─ View/
+│ └─ ConsoleView.java
+└─ BuscaminasApp/
+	└─ app
+
+ Controles del juego
+
+| Acción | Comando |
+|--------|---------|
+| Destapar casilla | `A5` (Letra + Número) |
+| Guardar partida | `G` |
+| Cargar partida | `C` |
+| Salir del juego | `Q` |
+| Reiniciar partida tras ganar o perder | `R` |	
+
+ Manejo de Errores y Excepciones
+
+- Evita marcar casillas ya descubiertas
+- Impide jugadas fuera del tablero
+- Notifica si se intenta descubrir una casilla ya revelada
+- Controla los errores al guardar/cargar partida
+
+---
+
+Pruebas Unitarias
+
+Incluye casos de prueba con **JUnit 5** para validar la lógica interna del modelo:  
+- Conteo de minas
+- Marcado de casillas
+- Movimiento fuera de rango
+- Lógica de victoria
+
+---
+
+Autores
+
+Kevin Zaragocin Guaman, Kevin Pacheco Rea
+
+Licencia
+
+Proyecto académico — uso educativo.
