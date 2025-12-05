@@ -37,9 +37,12 @@ src/
 ├─ View/
 │ └─ ConsoleView.java
 ├─PruebasUnitarias
-├ │─ Casilla.java
-│ ├─ Tablero.java
-│ └─ CasillaYaDescubiertaException.java
+├ │─ CasillaTestManual.java
+│ ├─ TableroTestManual.java
+│ └─ CasillaYaDescubiertaExceptionTestManual.java
+│ ├─ AppTestManual.java
+│ ├─ TableroTestManual.java
+│ └─ GameControllerTestManual.java
 └─ BuscaminasApp/
 	└─ app
 
