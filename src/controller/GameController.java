@@ -11,7 +11,7 @@ public class GameController {
     private ConsoleView view;
 
     public GameController() {
-        tablero = new Tablero();
+        tablero = new Tablero(0, 0, 0);
         view = new ConsoleView();
     }
 
@@ -32,7 +32,7 @@ public class GameController {
 
                 if (opcion.equalsIgnoreCase("R")) {
                     view.mostrarMensaje("🔄 Reiniciando el juego...");
-                    tablero = new Tablero();
+                    tablero = new Tablero(0, 0, 0);
                     juegoFinalizado = false;
                     continue;
                 } else if (opcion.equalsIgnoreCase("Q")) {

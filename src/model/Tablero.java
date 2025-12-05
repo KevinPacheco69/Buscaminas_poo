@@ -13,7 +13,7 @@ public class Tablero implements Serializable {
 
     private Casilla[][] casillas;
 
-    public Tablero() {
+    public Tablero(int i, int j, int k) {
         casillas = new Casilla[filas][cols];
         for (int r = 0; r < filas; r++)
             for (int c = 0; c < cols; c++)
