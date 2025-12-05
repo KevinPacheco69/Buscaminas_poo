@@ -36,6 +36,10 @@ src/
 │ └─ CasillaYaDescubiertaException.java
 ├─ View/
 │ └─ ConsoleView.java
+├─PruebasUnitarias
+├ │─ Casilla.java
+│ ├─ Tablero.java
+│ └─ CasillaYaDescubiertaException.java
 └─ BuscaminasApp/
 	└─ app
 
